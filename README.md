@@ -1,4 +1,5 @@
 # Sentiment-analysis-DANANTARA-
+uncovering the emotional results of society to DANANTARA
 # Analisis Sentimen Publik Terhadap BP Investasi Danantara 🇮🇩
 
 Proyek ini bertujuan untuk menganalisis opini dan sentimen masyarakat di platform media sosial X (Twitter) mengenai pembentukan **Badan Pengelola Investasi Danantara** menggunakan algoritma **Naive Bayes Classifier**.

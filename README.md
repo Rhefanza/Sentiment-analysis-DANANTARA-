@@ -1,36 +1,43 @@
-# Sentiment-analysis-DANANTARA-
-uncovering the emotional results of society to DANANTARA
-# Analisis Sentimen Publik Terhadap BP Investasi Danantara 🇮🇩
+# Analisis Sentimen Publik terhadap Danantara
 
-Proyek ini bertujuan untuk menganalisis opini dan sentimen masyarakat di platform media sosial X (Twitter) mengenai pembentukan **Badan Pengelola Investasi Danantara** menggunakan algoritma **Naive Bayes Classifier**.
+Proyek NLP untuk menganalisis opini publik di platform X mengenai Badan Pengelola Investasi Danantara menggunakan preprocessing teks, klasifikasi sentimen, dan visualisasi.
 
-## 📌 Ringkasan Proyek
-Badan Pengelola Investasi Danantara merupakan institusi baru yang menarik banyak perhatian publik. Analisis ini dilakukan untuk memahami apakah respon masyarakat cenderung positif, negatif, atau netral terhadap inisiatif ini.
+## Pipeline
 
-### Fitur Utama:
-* **Data Crawling**: Mengambil data tweet publik mengenai "Danantara".
-* **Text Preprocessing**: Pembersihan data mentah meliputi *Cleansing*, *Case Folding*, *Tokenizing*, *Filtering* (Stopword removal menggunakan Sastrawi), dan *Stemming*.
-* **Sentiment Classification**: Menggunakan algoritma **Naive Bayes** untuk mengklasifikasikan teks.
-* **Visualisasi Data**: Distribusi sentimen dan *WordCloud* kata-kata yang paling sering muncul.
+1. Mengumpulkan data publik terkait Danantara.
+2. Membersihkan teks, URL, mention, tanda baca, dan duplikasi.
+3. Melakukan case folding, tokenisasi, stopword removal, serta stemming.
+4. Menyiapkan fitur teks.
+5. Melatih dan mengevaluasi Naive Bayes.
+6. Membuat visualisasi distribusi sentimen dan kata yang dominan.
 
-## 🛠️ Teknologi yang Digunakan
-* **Bahasa**: Python
-* **Library**: 
-    * `Pandas` & `NumPy` (Olah data)
-    * `Scikit-Learn` (Model Machine Learning)
-    * `NLTK` & `Sastrawi` (Natural Language Processing)
-    * `Matplotlib` & `Seaborn` (Visualisasi)
+## Teknologi
 
-## 📊 Hasil Analisis
-Berdasarkan pengujian yang dilakukan:
-* **Sentimen Dominan**: Sentimen [Isi di sini, misal: Netral/Positif] menjadi opini yang paling banyak ditemukan.
-* **Akurasi Model**: Model Naive Bayes memberikan hasil performa yang cukup stabil dalam mengklasifikasikan opini publik.
+- Python
+- Pandas dan NumPy
+- scikit-learn
+- NLTK dan Sastrawi
+- Matplotlib, Seaborn, dan WordCloud
 
-## 📂 Struktur File
-* `Danantara_sentiment_Analysis.ipynb`: Notebook utama berisi alur kode dari crawling hingga evaluasi model.
-* `Analisis Sentimen Danantara.pdf`: Dokumen laporan lengkap mengenai metodologi dan hasil penelitian.
+## File
 
-## 🚀 Cara Menjalankan
-1. Clone repositori ini:
-   ```bash
-   git clone [https://github.com/username-kamu/nama-repo.git](https://github.com/username-kamu/nama-repo.git)
+- `Danantara_sentiment_Analysis.ipynb` — notebook utama.
+- `Data Sentiment.csv` — data analisis.
+- `Analisis Sentimen Danantara .pdf` — laporan proyek.
+
+## Menjalankan
+
+```bash
+git clone https://github.com/Rhefanza/Sentiment-analysis-DANANTARA-.git
+cd Sentiment-analysis-DANANTARA-
+pip install pandas numpy scikit-learn nltk Sastrawi matplotlib seaborn wordcloud jupyter
+jupyter notebook Danantara_sentiment_Analysis.ipynb
+```
+
+## Evaluasi
+
+Performa model perlu dibaca menggunakan precision, recall, F1-score, dan confusion matrix per kelas. Distribusi sentimen aktual serta metrik final mengikuti output notebook dan laporan, sehingga tidak ditulis sebagai angka tetap di README.
+
+## Catatan Etika
+
+Data media sosial dapat memuat bahasa informal, sarkasme, dan konteks yang sulit ditangkap oleh model. Hasil klasifikasi perlu diperlakukan sebagai estimasi analitis, bukan representasi mutlak opini masyarakat.
